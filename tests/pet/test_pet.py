@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 from openapi_client import PutPetProps, Pet
 
@@ -10,7 +11,7 @@ class Test:
 
     @classmethod
     def setup_method(cls):
-        with open('data.json', 'r') as file:
+        with open(f"{Path(__file__).parent}/data.json", 'r') as file:
             data = json.load(file)
         for obj in data:
             PutPetProps.model_validate(obj)
