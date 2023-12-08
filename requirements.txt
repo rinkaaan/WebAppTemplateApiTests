@@ -1,1 +1,3 @@
 pytest
+# nguylinc-python-utils==0.0.1
+# models==0.0.1

@@ -1,4 +1,4 @@
-[
+PETS = [
     {
         "animal_type": "Cat",
         "name": "Cat A",
